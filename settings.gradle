@@ -1,0 +1,5 @@
+rootProject.name = 'client-in-backend'
+include 'foo'
+include 'foo-client'
+include 'bar'
+

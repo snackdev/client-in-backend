@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: prod-client
+server:
+  port: 9002
+
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev-client
+
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod-client
+
+foo:
+  client:
+    mode: production
+    protocol: http
+    host: localhost
+    port: 9001
+
